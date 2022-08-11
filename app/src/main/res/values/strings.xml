@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WeathoMeter</string>
+    <string name="title_home">WeathoMeter</string>
+    <string name="title_saved_cities">Saved Cities</string>
+    <string name="title_settings">Settings</string>
+    <string name="saved">Saved</string>
+    <string name="weather">Weather</string>
+    <string name="save_city">Save City</string>
+    <string name="today">Today</string>
+    <string name="humidity">Humidity :</string>
+    <string name="no_saved_cities">No saved cities.</string>
+    <string name="settings">Settings</string>
+    <string name="delete">Delete</string>
+    <string name="notifications">Notifications</string>
+    <string name="about_weathometer">About Weathometer</string>
+    <string name="change_city">Change City</string>
+    <string name="min_temp">Min Temp :</string>
+    <string name="max_temp">Max Temp :</string>
+    <string name="pressure">Pressure :</string>
+    <string name="change">Change</string>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.SettingsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Settings"
+        app:titleTextColor="@color/black" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <TextView
+        android:id="@+id/tv_default_city_pl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Default City"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_settings" />
+
+    <TextView
+        android:id="@+id/tv_default_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_settings"
+        android:drawablePadding="5dp"
+        app:drawableEndCompat="@drawable/ic_edit"
+        app:drawableTint="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/notifications"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/tv_default_city_pl" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_settings_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_default_city_pl"
+        app:layout_constraintEnd_toEndOf="@id/gl_right"
+
+         />
+
+    <TextView
+        android:id="@+id/tv_pl_settings_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Notification Time"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/tv_notifications" />
+
+    <TextView
+        android:id="@+id/tv_time_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="18:00"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/tv_notifications" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_clear_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_time_settings"
+        android:text="Clear All Data"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:elevation="8dp"
+        app:cornerRadius="5dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/red"
+        />
+
+    <TextView
+        android:id="@+id/tv_pl_settings_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="About"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/btn_clear_settings" />
+
+    <View
+        android:id="@+id/view_pl_settings_2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="@id/gl_right"
+        app:layout_constraintStart_toStartOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/tv_pl_settings_5" />
+
+    <TextView
+        android:id="@+id/tv_about_weathometer_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/about_weathometer"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/view_pl_settings_2" />
+
+    <TextView
+        android:id="@+id/tv_privacy_weathometer_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Privacy Policy"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/tv_about_weathometer_settings" />
+
+    <TextView
+        android:id="@+id/tv_contact_weathometer_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Contact Us"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/gl_left"
+        app:layout_constraintTop_toBottomOf="@id/tv_privacy_weathometer_settings" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
